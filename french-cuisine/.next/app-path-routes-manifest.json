@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/regions/page": "/regions",
+  "/cheese-wine/page": "/cheese-wine",
+  "/recipes/page": "/recipes",
+  "/page": "/",
+  "/recipes/[id]/page": "/recipes/[id]"
+}
