@@ -105,66 +105,6 @@ export const recipes: Recipe[] = [
     ]
   },
   {
-    id: "quiche-lorraine",
-    name: "Quiche Lorraine",
-    description: "A savory tart from Lorraine with bacon, cheese, and creamy egg custard in a flaky pastry shell.",
-    image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&q=80",
-    prepTime: "1 hour",
-    servings: "6-8",
-    difficulty: "Medium",
-    ingredients: [
-      "1 pie crust (homemade or store-bought)",
-      "200g bacon lardons",
-      "200g Gruyère cheese, grated",
-      "4 large eggs",
-      "300ml heavy cream",
-      "200ml milk",
-      "Nutmeg, salt, and pepper",
-      "Butter for greasing"
-    ],
-    steps: [
-      "Preheat oven to 190°C.",
-      "Blind bake the pie crust for 10 minutes.",
-      "Cook bacon until crispy, drain on paper towels.",
-      "Whisk eggs, cream, milk, and seasonings.",
-      "Sprinkle bacon and cheese in the crust.",
-      "Pour egg mixture over the filling.",
-      "Bake for 35-40 minutes until set and golden.",
-      "Let cool slightly before slicing."
-    ]
-  },
-  {
-    id: "bouillabaisse",
-    name: "Bouillabaisse",
-    description: "A traditional Provençal fish stew from Marseille, served with rouille sauce and crusty bread.",
-    image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=800&q=80",
-    prepTime: "2 hours",
-    servings: "6",
-    difficulty: "Hard",
-    ingredients: [
-      "1kg mixed fish (sea bass, red mullet, monkfish)",
-      "500g mussels",
-      "2 leeks",
-      "1 fennel bulb",
-      "4 tomatoes",
-      "4 cloves garlic",
-      "Saffron threads",
-      "Orange peel",
-      "Fish stock",
-      "Olive oil and herbs"
-    ],
-    steps: [
-      "Clean and prepare all fish and seafood.",
-      "Sauté leeks, fennel, and garlic in olive oil.",
-      "Add tomatoes, saffron, orange peel, and stock.",
-      "Simmer for 20 minutes to create the broth.",
-      "Add firm fish first, cook for 5 minutes.",
-      "Add delicate fish and mussels, cook 5 more minutes.",
-      "Serve broth first, then fish on separate platter.",
-      "Accompany with rouille sauce and croutons."
-    ]
-  },
-  {
     id: "creme-brulee",
     name: "Crème Brûlée",
     description: "Rich vanilla custard with a caramelized sugar top that cracks beautifully with your spoon.",
@@ -188,62 +128,6 @@ export const recipes: Recipe[] = [
       "Chill for at least 4 hours or overnight.",
       "Sprinkle sugar on top and caramelize with torch.",
       "Let caramel harden for 1 minute before serving."
-    ]
-  },
-  {
-    id: "onion-soup",
-    name: "French Onion Soup",
-    description: "Caramelized onions in rich beef broth, topped with toasted bread and melted Gruyère cheese.",
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
-    prepTime: "1.5 hours",
-    servings: "4",
-    difficulty: "Easy",
-    ingredients: [
-      "1kg onions, thinly sliced",
-      "2L beef stock",
-      "200ml white wine",
-      "3 tablespoons butter",
-      "1 tablespoon flour",
-      "Fresh thyme and bay leaf",
-      "Baguette slices",
-      "Gruyère cheese, grated"
-    ],
-    steps: [
-      "Melt butter in a large pot over medium heat.",
-      "Add onions and cook for 45 minutes until deeply caramelized.",
-      "Add flour and cook for 2 minutes.",
-      "Deglaze with white wine, scraping the bottom.",
-      "Add stock and herbs, simmer for 30 minutes.",
-      "Season with salt and pepper.",
-      "Ladle into oven-safe bowls, top with bread and cheese.",
-      "Broil until cheese is melted and bubbly."
-    ]
-  },
-  {
-    id: "duck-confit",
-    name: "Duck Confit",
-    description: "Duck legs slowly cooked in their own fat until tender, then crisped to perfection.",
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80",
-    prepTime: "4 hours",
-    servings: "4",
-    difficulty: "Hard",
-    ingredients: [
-      "4 duck legs",
-      "500g duck fat",
-      "4 cloves garlic",
-      "Fresh thyme and bay leaves",
-      "Coarse salt",
-      "Black peppercorns"
-    ],
-    steps: [
-      "Rub duck legs with salt, garlic, and herbs.",
-      "Refrigerate for 24 hours to cure.",
-      "Rinse off salt and pat dry.",
-      "Melt duck fat in a heavy pot.",
-      "Submerge duck legs in fat.",
-      "Cook at 110°C for 2-3 hours until tender.",
-      "Store covered in fat (can keep for weeks).",
-      "To serve, crisp skin-side down in a hot pan."
     ]
   }
 ];
@@ -308,7 +192,7 @@ export const regions = [
     name: "Provence",
     description: "Known for Mediterranean flavors, olive oil, herbs, and fresh vegetables.",
     image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800&q=80",
-    dishes: ["Ratatouille", "Bouillabaisse", "Salade Niçoise"],
+    dishes: ["Ratatouille", "Salade Nicoise", "Tapenade"],
     specialties: "Herbs de Provence, olive oil, rosé wine"
   },
   {

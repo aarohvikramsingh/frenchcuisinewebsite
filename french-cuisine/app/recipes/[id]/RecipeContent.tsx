@@ -14,15 +14,20 @@ interface RecipeContentProps {
 }
 
 export default function RecipeContent({ recipe }: RecipeContentProps) {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
+
+  const translateOrFallback = (key: string, fallback: string) => {
+    const translated = t(key);
+    return translated === key ? fallback : translated;
+  };
 
   // Get translated ingredients and steps
-  const translatedIngredients = recipe.ingredients.map((_, index) =>
-    t(`recipe.${recipe.id}.ingredient.${index}` as keyof typeof t) || recipe.ingredients[index]
+  const translatedIngredients = recipe.ingredients.map((ingredient, index) =>
+    translateOrFallback(`recipe.${recipe.id}.ingredient.${index}`, ingredient)
   );
 
-  const translatedSteps = recipe.steps.map((_, index) =>
-    t(`recipe.${recipe.id}.step.${index}` as keyof typeof t) || recipe.steps[index]
+  const translatedSteps = recipe.steps.map((step, index) =>
+    translateOrFallback(`recipe.${recipe.id}.step.${index}`, step)
   );
 
   return (
@@ -48,12 +53,17 @@ export default function RecipeContent({ recipe }: RecipeContentProps) {
               <ArrowLeft className="w-4 h-4" /> {t("recipe.backToRecipes")}
             </Link>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_10px_rgba(0,0,0,0.65)]">
-              {t(`recipe.${recipe.id}.name` as keyof typeof t) || recipe.name}
+              {translateOrFallback(`recipe.${recipe.id}.name`, recipe.name)}
             </h1>
             {recipe.region && (
               <div className="flex items-center gap-2 text-white/90">
                 <MapPin className="w-5 h-5" />
-                <span className="text-lg">{t(`region.${recipe.region.toLowerCase().replace(/\s+/g, "-")}.name` as keyof typeof t) || recipe.region}</span>
+                <span className="text-lg">
+                  {translateOrFallback(
+                    `region.${recipe.region.toLowerCase().replace(/\s+/g, "-")}.name`,
+                    recipe.region
+                  )}
+                </span>
               </div>
             )}
           </div>
@@ -99,14 +109,16 @@ export default function RecipeContent({ recipe }: RecipeContentProps) {
                 <p className="text-xs text-[#718096] uppercase tracking-wide">
                   {t("recipe.difficulty")}
                 </p>
-                <p className="font-medium text-[#2d3748]">{t(`difficulty.${recipe.difficulty.toLowerCase()}` as keyof typeof t) || recipe.difficulty}</p>
+                <p className="font-medium text-[#2d3748]">
+                  {translateOrFallback(`difficulty.${recipe.difficulty.toLowerCase()}`, recipe.difficulty)}
+                </p>
               </div>
             </div>
           </div>
 
           {/* Description */}
           <p className="text-lg text-[#4a5568] leading-relaxed mb-8">
-            {t(`recipe.${recipe.id}.desc` as keyof typeof t) || recipe.description}
+            {translateOrFallback(`recipe.${recipe.id}.desc`, recipe.description)}
           </p>
         </motion.div>
 
