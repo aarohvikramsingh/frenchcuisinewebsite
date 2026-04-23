@@ -83,9 +83,9 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="font-serif text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight leading-none">
+            <h1 className="font-serif text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight leading-none drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
               <span className="block">French</span>
-              <span className="block text-[#c9a962]">Cuisine</span>
+              <span className="block text-[#c9a962] drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">Cuisine</span>
             </h1>
           </motion.div>
 

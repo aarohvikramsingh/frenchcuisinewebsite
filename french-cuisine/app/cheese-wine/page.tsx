@@ -12,27 +12,23 @@ import { useLanguage } from "../context/LanguageContext";
 const cheeseMakingSteps = [
   {
     icon: Milk,
-    title: "Milk Collection",
-    titleKey: "step1",
-    description: "Fresh milk is collected from cows, goats, or sheep, depending on the cheese type."
+    titleKey: "cheeseWine.step1.title",
+    descKey: "cheeseWine.step1.desc"
   },
   {
     icon: Clock,
-    title: "Curdling",
-    titleKey: "step2",
-    description: "Rennet and starter cultures are added to curdle the milk into solid curds."
+    titleKey: "cheeseWine.step2.title",
+    descKey: "cheeseWine.step2.desc"
   },
   {
     icon: MapPin,
-    title: "Cutting & Draining",
-    titleKey: "step3",
-    description: "Curds are cut and whey is drained, shaping the final cheese texture."
+    titleKey: "cheeseWine.step3.title",
+    descKey: "cheeseWine.step3.desc"
   },
   {
     icon: Clock,
-    title: "Aging",
-    titleKey: "step4",
-    description: "Cheeses are aged in controlled environments to develop flavor and character."
+    titleKey: "cheeseWine.step4.title",
+    descKey: "cheeseWine.step4.desc"
   }
 ];
 
@@ -90,9 +86,9 @@ export default function CheeseWinePage() {
                 <step.icon className="w-6 h-6 text-[#722f37]" />
               </div>
               <h3 className="font-serif text-lg font-semibold text-[#2d3748] mb-2">
-                {step.title}
+                {t(step.titleKey)}
               </h3>
-              <p className="text-sm text-[#4a5568]">{step.description}</p>
+              <p className="text-sm text-[#4a5568]">{t(step.descKey)}</p>
             </motion.div>
           ))}
         </div>

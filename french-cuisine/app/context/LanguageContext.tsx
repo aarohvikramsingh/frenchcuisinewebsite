@@ -138,6 +138,16 @@ const translations = {
     "region.alsace.desc": "Famous for German-influenced dishes like choucroute and tarte flambée.",
     "region.brittany.desc": "Known for its seafood, especially oysters and mussels, and the famous crêpes.",
     "region.burgundy.desc": "Famous for wine-based cooking, mustard, and rich, hearty dishes.",
+
+    // Cheese Making Steps
+    "cheeseWine.step1.title": "Milk Collection",
+    "cheeseWine.step1.desc": "Fresh milk is collected from cows, goats, or sheep, depending on the cheese type.",
+    "cheeseWine.step2.title": "Curdling",
+    "cheeseWine.step2.desc": "Rennet and starter cultures are added to curdle the milk into solid curds.",
+    "cheeseWine.step3.title": "Cutting & Draining",
+    "cheeseWine.step3.desc": "Curds are cut and whey is drained, shaping the final cheese texture.",
+    "cheeseWine.step4.title": "Aging",
+    "cheeseWine.step4.desc": "Cheeses are aged in controlled environments to develop flavor and character.",
   },
   fr: {
     // Navbar
@@ -377,6 +387,16 @@ const translations = {
     "region.alsace.desc": "Célèbre pour ses plats à influence allemande comme la choucroute et la tarte flambée.",
     "region.brittany.desc": "Connue pour ses fruits de mer, particulièrement les huîtres et les moules, et les célèbres crêpes.",
     "region.burgundy.desc": "Célèbre pour sa cuisine au vin, sa moutarde et ses plats riches et copieux.",
+
+    // Cheese Making Steps (French)
+    "cheeseWine.step1.title": "Collecte du Lait",
+    "cheeseWine.step1.desc": "Le lait frais est collecté auprès de vaches, chèvres ou brebis, selon le type de fromage.",
+    "cheeseWine.step2.title": "Caillage",
+    "cheeseWine.step2.desc": "La présure et les ferments sont ajoutés pour cailler le lait en caillé solide.",
+    "cheeseWine.step3.title": "Découpage & Égouttage",
+    "cheeseWine.step3.desc": "Le caillé est découpé et le lactosérum est égoutté, façonnant la texture finale du fromage.",
+    "cheeseWine.step4.title": "Affinage",
+    "cheeseWine.step4.desc": "Les fromages sont affinés dans des environnements contrôlés pour développer leur saveur et leur caractère.",
   },
 };
 
