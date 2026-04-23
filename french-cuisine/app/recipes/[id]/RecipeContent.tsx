@@ -47,7 +47,7 @@ export default function RecipeContent({ recipe }: RecipeContentProps) {
             >
               <ArrowLeft className="w-4 h-4" /> {t("recipe.backToRecipes")}
             </Link>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_10px_rgba(0,0,0,0.65)]">
               {t(`recipe.${recipe.id}.name` as keyof typeof t) || recipe.name}
             </h1>
             {recipe.region && (
